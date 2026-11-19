@@ -1,0 +1,5 @@
+.streamlit/secrets.toml
+taskflow.sqlite3
+taskflow.sqlite3-shm
+taskflow.sqlite3-wal
+__pycache__/
