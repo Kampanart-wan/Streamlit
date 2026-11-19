@@ -11,3 +11,5 @@
 7. ติดตั้ง dependencies ด้วย `pip install -r requirements.txt` แล้วเริ่มแอปด้วย `streamlit run app.py`
 
 บัญชีสมาชิกใช้รหัส `sub` ที่ยืนยันโดย Google ข้อมูลบัญชี การตั้งค่า และงานจะถูกเก็บแยกตามสมาชิกใน Supabase PostgreSQL โดยบังคับการเชื่อมต่อ TLS ไฟล์ `.streamlit/secrets.toml` มีข้อมูลลับและห้าม commit ขึ้น Git
+
+บน PostgreSQL แอปใช้ตาราง `taskflow_tasks` เพื่อไม่ให้ชนกับตาราง `tasks` เดิมที่อาจมีโครงสร้างต่างกัน โดยไม่แก้หรือลบตารางเดิม
